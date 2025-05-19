@@ -1,48 +1,59 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SDN WONOCOLO 1 TAMAN</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Logo Sekolah" style="height: 80px;" />
+    <img src="logo-sdn.png" alt="Logo SDN" class="logo" />
     <h1>SDN WONOCOLO 1 TAMAN</h1>
-    <p>Jl. [Alamat Sekolah], Taman, Sidoarjo</p>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="profil.html">Profil</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
   </header>
-  <nav>
-    <a href="index.html">Beranda</a>
-    <a href="#profil">Profil</a>
-    <a href="#visi">Visi & Misi</a>
-    <a href="guru.html">Data Guru</a>
-    <a href="#berita">Berita</a>
-    <a href="#galeri">Galeri</a>
-    <a href="#kontak">Kontak</a>
-  </nav>
-  <main>
-    <section id="beranda">
-      <h2>Selamat Datang</h2>
-      <p>Selamat datang di website resmi SDN WONOCOLO 1 TAMAN. Kami berkomitmen memberikan pendidikan terbaik untuk generasi masa depan.</p>
-    </section>
-    <section id="profil">
-      <h2>Profil Sekolah</h2>
-      <p>SDN WONOCOLO 1 merupakan sekolah dasar yang berlokasi di Kecamatan Taman, Kabupaten Sidoarjo, dengan visi mencetak generasi cerdas dan berkarakter.</p>
-    </section>
-    <section id="guru">
-      <h2>Daftar Guru</h2>
-      <ul>
-        <li>Ibu SUCIATI, S.Pd., M.Pd – Kepala Sekolah</li>
-        <li>Bu NANDAYU DWI PUSPITASARI, S.Pd – Wali Kelas 1</li>
-        <li>Bu DEWI KURNIA, S.Pd.SD – Wali Kelas 1</li>
-        <li>Pak NANANG MASRUFI, S.Pd – Wali Kelas 2</li>
-        <li>Bu ROSANA PRIMANTARI PUTRI – Guru Bahasa Inggris</li>
-      </ul>
-      <p><a href="guru.html">Lihat semua guru »</a></p>
-    </section>
-  </main>
+
+  <section class="hero">
+    <h2>Selamat Datang di Website Resmi</h2>
+    <p>SDN Wonocolo 1 Taman, mencetak generasi cerdas dan berkarakter.</p>
+    <img src="anak-sekolah.png" alt="Anak Sekolah" />
+  </section>
+
+  <section class="profil">
+    <h3>Profil Sekolah</h3>
+    <p>SDN Wonocolo 1 Taman adalah sekolah dasar negeri yang terletak di Kecamatan Taman, Sidoarjo. Sekolah ini memiliki visi membentuk peserta didik yang berakhlak mulia, cerdas, dan berwawasan lingkungan.</p>
+  </section>
+
+  <section class="galeri-preview">
+    <h3>Galeri Kegiatan</h3>
+    <div class="galeri-grid">
+      <img src="foto1.jpg" alt="Kegiatan 1" />
+      <img src="foto2.jpg" alt="Kegiatan 2" />
+      <img src="foto3.jpg" alt="Kegiatan 3" />
+    </div>
+    <a href="galeri.html" class="btn">Lihat Galeri</a>
+  </section>
+
+  <section class="berita">
+    <h3>Berita Terbaru</h3>
+    <ul>
+      <li><strong>17 Mei 2025:</strong> Upacara Hari Pendidikan Nasional</li>
+      <li><strong>10 Mei 2025:</strong> Kunjungan Dinas Pendidikan</li>
+      <li><strong>1 Mei 2025:</strong> Lomba Kebersihan Antar Kelas</li>
+    </ul>
+  </section>
+
+  <section class="kontak">
+    <h3>Kontak</h3>
+    <p>Alamat: Jl. Wonocolo Raya No. 1, Taman, Sidoarjo</p>
+    <p>Email: sdnwonocolo1@gmail.com | Telp: 031-xxxxxxx</p>
+  </section>
+
   <footer>
     <p>&copy; 2025 SDN WONOCOLO 1 TAMAN</p>
   </footer>
