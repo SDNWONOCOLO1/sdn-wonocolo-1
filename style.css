@@ -5,12 +5,12 @@ body {
   background-color: #f4f4f4;
 }
 header {
-  background-image: url('header-bg.png'); /* Ganti dengan nama file gambar kamu */
+  background-image: url('header-bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-  padding: 60px 20px; /* Bisa ditambah padding jika ingin kontennya lebih terlihat */
+  padding: 60px 20px;
   text-align: center;
 }
 nav ul {
