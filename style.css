@@ -5,9 +5,12 @@ body {
   background-color: #f4f4f4;
 }
 header {
-  background: linear-gradient(to right, #0052cc, #ffa500);
+  background-image: url('header-bg.png'); /* Ganti dengan nama file gambar kamu */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: white;
-  padding: 20px;
+  padding: 60px 20px; /* Bisa ditambah padding jika ingin kontennya lebih terlihat */
   text-align: center;
 }
 nav ul {
