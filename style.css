@@ -1,161 +1,52 @@
-/* Reset dasar */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   background-color: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
 }
-
-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('b2940c35-d558-4ea6-84f4-42e453202d10.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+header, nav, footer {
+  background-color: #004080;
   color: white;
-  padding: 80px 20px;
+  padding: 10px 20px;
   text-align: center;
 }
-
-header .logo img {
-  height: 100px;
-  margin-bottom: 15px;
-}
-
-nav {
-  background-color: #0052cc;
-}
-
 nav ul {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  list-style: none;
+  list-style-type: none;
+  padding: 0;
 }
-
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
 nav ul li a {
-  display: block;
-  padding: 14px 20px;
   color: white;
   text-decoration: none;
-  transition: background 0.3s, color 0.3s;
 }
-
-nav ul li a:hover {
-  background-color: #ffa500;
-  color: black;
-}
-
 main {
-  max-width: 1100px;
-  margin: 40px auto;
+  display: flex;
   padding: 20px;
-  background: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  border-radius: 8px;
 }
-
 .konten-utama {
   display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
 }
-
 .kolom-kiri {
-  flex: 2;
-}
-
-.kolom-kanan {
-  flex: 1;
-  background-color: #f9f9f9;
-  padding: 15px;
-  border-left: 2px solid #ddd;
+  width: 65%;
+  background-color: white;
+  padding: 20px;
   border-radius: 8px;
 }
-
-.kolom-kanan h2 {
-  color: #005bbb;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #ffa500;
-  padding-bottom: 5px;
+.kolom-kanan {
+  width: 35%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
 }
-
-.berita {
-  margin-bottom: 20px;
-}
-
-.berita h3 {
-  margin-bottom: 5px;
-}
-
-.berita p {
-  margin-bottom: 5px;
-  font-size: 14px;
-}
-
-.berita a {
-  color: #005bbb;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.berita a:hover {
-  color: #ffa500;
-}
-
-h2 {
-  color: #0052cc;
-  margin-bottom: 10px;
-  border-bottom: 2px solid #ffa500;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-h3 {
-  margin-top: 20px;
-  color: #333;
-}
-
-ul {
-  margin-left: 20px;
-  padding-left: 10px;
-}
-
 footer {
-  background-color: #0052cc;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
-
-@media (max-width: 768px) {
-  header {
-    padding: 60px 10px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav ul li a {
-    padding: 12px;
-    border-top: 1px solid #0044aa;
-  }
-
-  main {
-    margin: 20px;
-    padding: 15px;
-  }
-
-  .konten-utama {
-    flex-direction: column;
-  }
+.berita img {
+  max-width: 100%;
 }
