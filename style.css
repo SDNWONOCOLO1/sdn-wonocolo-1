@@ -15,6 +15,12 @@ header {
   text-align: center;
 }
 
+.logo img {
+  height: 100px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -23,6 +29,11 @@ nav ul {
   overflow: hidden;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0;
 }
 
 nav ul li a {
@@ -31,15 +42,31 @@ nav ul li a {
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
+  font-weight: bold;
 }
 
 nav ul li a:hover {
   background-color: #ffa500;
   color: black;
+  border-radius: 4px;
 }
 
 main {
-  padding: 20px;
+  padding: 30px 20px;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #1e3c72;
+  margin-bottom: 10px;
 }
 
 footer {
@@ -47,7 +74,5 @@ footer {
   color: white;
   text-align: center;
   padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  margin-top: 40px;
 }
