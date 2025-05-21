@@ -1,124 +1,50 @@
-/* Reset dasar */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body umum */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
-}
-
-/* Header */
-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url('b2940c35-d558-4ea6-84f4-42e453202d10.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-  padding: 80px 20px;
-  text-align: center;
-}
-
-header .logo img {
-  height: 100px;
-  margin-bottom: 15px;
-}
-
-/* Navigasi */
-nav {
-  background-color: #0052cc;
-}
-
-nav ul {
+.konten-utama {
   display: flex;
-  justify-content: center;
+  gap: 20px;
   flex-wrap: wrap;
-  list-style: none;
 }
 
-nav ul li {
-  margin: 0;
+.konten-utama .kiri {
+  flex: 2;
 }
 
-nav ul li a {
-  display: block;
-  padding: 14px 20px;
-  color: white;
-  text-decoration: none;
-  transition: background 0.3s, color 0.3s;
-}
-
-nav ul li a:hover {
-  background-color: #ffa500;
-  color: black;
-}
-
-/* Konten utama */
-main {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 20px;
-  background: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  border-radius: 8px;
-}
-
-/* Judul dan subjudul */
-h2 {
-  color: #0052cc;
-  margin-bottom: 10px;
-  border-bottom: 2px solid #ffa500;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-h3 {
-  margin-top: 20px;
-  color: #333;
-}
-
-/* List */
-ul {
-  margin-left: 20px;
-  padding-left: 10px;
-}
-
-/* Footer */
-footer {
-  background-color: #0052cc;
-  color: white;
-  text-align: center;
+.konten-utama .kanan {
+  flex: 1;
+  background-color: #f9f9f9;
   padding: 15px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsif */
+.kanan h2 {
+  margin-bottom: 15px;
+  color: #005bbb;
+}
+
+.berita h3 {
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+.berita p {
+  margin-bottom: 10px;
+}
+
+.berita a {
+  color: #005bbb;
+  text-decoration: none;
+}
+
+.berita a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
-  header {
-    padding: 60px 10px;
-  }
-
-  nav ul {
+  .konten-utama {
     flex-direction: column;
-    text-align: center;
   }
 
-  nav ul li a {
-    padding: 12px;
-    border-top: 1px solid #0044aa;
-  }
-
-  main {
-    margin: 20px;
-    padding: 15px;
+  .kanan {
+    margin-top: 30px;
   }
 }
