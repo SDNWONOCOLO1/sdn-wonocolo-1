@@ -1,12 +1,22 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset dasar */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  box-sizing: border-box;
 }
 
+/* Body umum */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('b2940c35-d558-4ea6-84f4-42e453202d10.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('b2940c35-d558-4ea6-84f4-42e453202d10.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -15,22 +25,33 @@ header {
   text-align: center;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+header .logo img {
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+/* Navigasi */
+nav {
   background-color: #0052cc;
-  overflow: hidden;
+}
+
+nav ul {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0;
 }
 
 nav ul li a {
-  display: inline-block;
-  color: white;
-  text-align: center;
+  display: block;
   padding: 14px 20px;
+  color: white;
   text-decoration: none;
+  transition: background 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
@@ -38,16 +59,66 @@ nav ul li a:hover {
   color: black;
 }
 
+/* Konten utama */
 main {
+  max-width: 1000px;
+  margin: 40px auto;
   padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
 }
 
+/* Judul dan subjudul */
+h2 {
+  color: #0052cc;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ffa500;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+h3 {
+  margin-top: 20px;
+  color: #333;
+}
+
+/* List */
+ul {
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+/* Footer */
 footer {
   background-color: #0052cc;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
   position: relative;
   bottom: 0;
   width: 100%;
+  margin-top: 40px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  header {
+    padding: 60px 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul li a {
+    padding: 12px;
+    border-top: 1px solid #0044aa;
+  }
+
+  main {
+    margin: 20px;
+    padding: 15px;
+  }
 }
