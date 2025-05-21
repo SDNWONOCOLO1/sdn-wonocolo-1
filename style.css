@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 
-/* Body umum */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -13,9 +12,8 @@ body {
   line-height: 1.6;
 }
 
-/* Header */
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('b2940c35-d558-4ea6-84f4-42e453202d10.png');
   background-size: cover;
   background-position: center;
@@ -30,7 +28,6 @@ header .logo img {
   margin-bottom: 15px;
 }
 
-/* Navigasi */
 nav {
   background-color: #0052cc;
 }
@@ -40,10 +37,6 @@ nav ul {
   justify-content: center;
   flex-wrap: wrap;
   list-style: none;
-}
-
-nav ul li {
-  margin: 0;
 }
 
 nav ul li a {
@@ -59,9 +52,8 @@ nav ul li a:hover {
   color: black;
 }
 
-/* Konten utama */
 main {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 40px auto;
   padding: 20px;
   background: white;
@@ -69,7 +61,54 @@ main {
   border-radius: 8px;
 }
 
-/* Judul dan subjudul */
+.konten-utama {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.kolom-kiri {
+  flex: 2;
+}
+
+.kolom-kanan {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-left: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+.kolom-kanan h2 {
+  color: #005bbb;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ffa500;
+  padding-bottom: 5px;
+}
+
+.berita {
+  margin-bottom: 20px;
+}
+
+.berita h3 {
+  margin-bottom: 5px;
+}
+
+.berita p {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.berita a {
+  color: #005bbb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.berita a:hover {
+  color: #ffa500;
+}
+
 h2 {
   color: #0052cc;
   margin-bottom: 10px;
@@ -83,25 +122,19 @@ h3 {
   color: #333;
 }
 
-/* List */
 ul {
   margin-left: 20px;
   padding-left: 10px;
 }
 
-/* Footer */
 footer {
   background-color: #0052cc;
   color: white;
   text-align: center;
   padding: 15px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
   margin-top: 40px;
 }
 
-/* Responsif */
 @media (max-width: 768px) {
   header {
     padding: 60px 10px;
@@ -120,5 +153,9 @@ footer {
   main {
     margin: 20px;
     padding: 15px;
+  }
+
+  .konten-utama {
+    flex-direction: column;
   }
 }
