@@ -159,3 +159,19 @@ footer {
     flex-direction: column;
   }
 }
+.kolom-tengah {
+  flex: 1.5;
+  background-color: #fefefe;
+  padding: 15px;
+  border-left: 2px solid #ddd;
+  border-right: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+.kolom-tengah img.foto-kepsek {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
