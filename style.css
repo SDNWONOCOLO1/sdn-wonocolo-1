@@ -133,6 +133,11 @@ footer {
   text-align: center;
   padding: 30px 20px;
   margin-top: 40px;
+  
+}
+.kontak-footer i {
+  margin-right: 8px;
+  color: #ffa500; /* Warna ikon */
 }
 
 .kontak-footer {
